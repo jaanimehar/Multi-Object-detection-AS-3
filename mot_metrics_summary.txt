@@ -1,0 +1,19 @@
+============================================================
+MOT Evaluation Results
+============================================================
+        mota      motp  num_frames  num_matches  num_false_positives  num_misses  num_switches
+MOT  0.62532  0.778437         145          489                    0         284             9
+============================================================
+
+Key Metrics:
+MOTA (Multiple Object Tracking Accuracy): 62.53%
+MOTP (Multiple Object Tracking Precision): 0.7784
+
+Frames Processed: 145
+False Positives: 0
+Misses: 284
+Switches: 9
+============================================================
+Tracking results saved to: D:\M.Tech DS\AIML application\Multi Object detection AS-3\tracking_results.txt
+Video saved to: D:\M.Tech DS\AIML application\Multi Object detection AS-3\output_video.mp4
+============================================================
