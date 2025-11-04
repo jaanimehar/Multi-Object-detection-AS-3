@@ -477,8 +477,7 @@ def evaluate_mot(gt_file, result_file):
     print(f"\nKey Metrics:")
     print(f"MOTA (Multiple Object Tracking Accuracy): {mota:.2f}%")
     print(f"MOTP (Multiple Object Tracking Precision): {motp:.4f}")
-    
-    
+ 
     return summary
 
 

@@ -136,4 +136,36 @@ You can improve tracking accuracy by adjusting SORT parameters such as:
 max_age, min_hits, and iou_threshold.
 
 ====================================================================
-END OF FILE
+🔍 Interpretation & Analysis
+
+✅ 1. MOTA = 62.53%
+This value represents the overall tracking accuracy — how well the system detects and maintains identities over all frames.
+A 62.53% MOTA indicates moderate tracking accuracy.
+It means the tracker correctly identified and followed most objects, though some were missed or mismatched due to occlusions or rapid motion.
+
+✅ 2. MOTP = 0.7784
+This measures how precisely the predicted bounding boxes overlap with the ground truth.
+A value close to 1.0 means very accurate localization.
+Thus, 0.7784 suggests the bounding boxes are fairly accurate and well-aligned with actual object positions.
+
+✅ 3. False Positives = 0
+This is excellent — it shows the tracker did not produce spurious detections. Every tracked object likely corresponded to a real target.
+
+✅ 4. Misses = 284
+A relatively high number of missed detections implies that some objects were not consistently detected across frames, possibly due to lighting, occlusion, or partial visibility.
+
+✅ 5. ID Switches = 9
+This means object identities were swapped 9 times during tracking.
+This is within an acceptable range, showing that the tracker mostly maintained consistent IDs, though improvements in motion modeling could reduce switches further.
+
+📊 Overall Comment
+
+The tracker performs reasonably well, achieving:
+
+High precision (MOTP ~0.78)
+
+Moderate accuracy (MOTA ~62%)
+
+Very few ID switches and zero false positives
+
+However, the miss rate suggests potential improvement areas — better detection sensitivity or parameter tuning (e.g., lower iou_threshold, higher detection confidence) could improve tracking completeness.
